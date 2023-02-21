@@ -1,0 +1,10 @@
+import {AppProps} from "next/app";
+import MainLayout from "@/layouts/MainLayout";
+
+export default function MyApp({ Component, pageProps }: AppProps) {
+    return (
+        <MainLayout>
+            <Component {...pageProps} />
+        </MainLayout>
+    )
+}
